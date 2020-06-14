@@ -96,7 +96,7 @@ getCurrentPrice = async (target, processedURL) => {
 			return response.data.price
 		})
 		.catch(function (error) {
-	//		console.log(error)
+
 			return "error"
 		});
 	
