@@ -1,0 +1,28 @@
+{
+  "name": "apt_cron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potaski88/APT_cron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potaski88/APT_cron/issues"
+  },
+  "homepage": "https://github.com/potaski88/APT_cron#readme",
+  "dependencies": {
+    "ampritra-scraper": "^1.2.0",
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security",
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.2",
+    "shelljs": "^0.8.4"
+  }
+}
