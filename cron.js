@@ -30,6 +30,7 @@ const headers = {
 		
 		
 updateOne = async (newData) => {
+	console.log(newData)
 	const x = await fetch(url + "updateOne", {
             method: 'PUT',
 			body: JSON.stringify(newData),
@@ -37,7 +38,7 @@ updateOne = async (newData) => {
             headers: headers
         })
         .then( res => {
-		//	console.log(res)
+			console.log("updated")
         //    return res.json()
         })
         .then( res => {
@@ -52,13 +53,11 @@ updateOne = async (newData) => {
 
 getNewData = async () => {
 	const item = await getAll()
-	console.log(item)
+	
 	const target_1 = "https://pupptest.herokuapp.com/getPrice"
 	//	const target_2 = "165.22.74.102:5100/getPrice"		
 	const target_2 = "https://pupptest.herokuapp.com/getInfo"
-		
-		
-	const newData = async item => {
+
 		const processedURL = encodeURIComponent(item.url)
 			try {
 				let newPrice = await getCurrentPrice(target_1, processedURL)
@@ -83,7 +82,6 @@ getNewData = async () => {
 			} catch (error) {
 				console.log("error2")
 			}
-	}
 }
 
 
