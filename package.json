@@ -21,7 +21,7 @@
     "axios": "^0.19.2",
     "fs": "0.0.1-security",
     "node-cron": "^2.0.3",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "request": "^2.88.2",
     "shelljs": "^0.8.4"
   }
